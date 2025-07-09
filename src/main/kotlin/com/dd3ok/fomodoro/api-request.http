@@ -1,0 +1,11 @@
+### 1. 가장 최근의 Fear and Greed Index 데이터 조회
+GET http://localhost:8080/api/v1/fear-greed/latest
+Accept: application/json
+
+### 2. 특정 날짜의 Fear and Greed Index 데이터 조회
+GET http://localhost:8080/api/v1/fear-greed?date=2025-07-09
+Accept: application/json
+
+### 3. Fear and Greed Index 수집 배치 수동 실행
+POST http://localhost:8080/api/v1/batch/run/fear-greed
+Accept: application/json

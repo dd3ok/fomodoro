@@ -1,1 +1,10 @@
-spring.application.name=fomodoro
+spring:
+  application:
+    name: fomodoro
+  data:
+    mongodb:
+      uri: ${MONGO_URI}
+
+crawling:
+  fear-and-greed:
+    url: https://production.dataviz.cnn.io/index/fearandgreed/graphdata
